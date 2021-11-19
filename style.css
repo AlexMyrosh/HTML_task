@@ -1,0 +1,338 @@
+
+/*-----------------------------------------------------------------------*/
+/*-------------------------FIRST LAYER-----------------------------------*/
+/*-----------------------------------------------------------------------*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);/*create 4 clomuns for our grid*/
+    grid-template-rows: repeat(2, 250px);/*and 2 rows*/
+    justify-content: center;
+} 
+
+html{
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+
+.FirstLayer {
+    padding-top: 4%;
+    background-color: rgb(222, 43, 36);
+    margin-top: -1.5%;
+    margin-left: -0.6%;
+    margin-right: -0.5%;
+    padding-bottom: 7%; /*Distance from bottom of the grid to another layer*/
+}
+
+/*Elements in the grid without a photo*/
+#FirstGridElement, 
+#ThirdGridElement, 
+#SixthGridElement, 
+#EighthGridElement{
+    background-color: rgb(243, 94, 89);
+    text-align: center;
+}
+
+/*Location a narrow picture in a grid box without photo*/
+#FirstGridElement>img, 
+#ThirdGridElement>img, 
+#SixthGridElement>img, 
+#EighthGridElement>img{
+    padding-top: 25%;
+}
+
+#FirstGridElement>p, 
+#ThirdGridElement>p, 
+#SixthGridElement>p, 
+#EighthGridElement>p{
+    margin-bottom: -2%;
+    color: white;
+}
+
+/*Grid elemets with a photo*/
+#SecondGridElement, 
+#FourthGridElement, 
+#FifthGridElement, 
+#SeventhGridElement{
+    overflow:hidden;
+}
+
+/*Photo of a camera*/
+#SecondGridElement>img{
+    position: relative;
+    left: -50%;
+
+    /*Makes animation smooth*/
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+#FourthGridElement>img, 
+#FifthGridElement>img, 
+#SeventhGridElement>img{
+    position: relative;
+    left: -30%;
+
+    /*Makes animation smooth*/
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+/*Scale the picture*/
+#SecondGridElement img:hover, 
+#FourthGridElement img:hover, 
+#FifthGridElement img:hover, 
+#SeventhGridElement img:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.GridElementTitle{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.title1{
+font-size: 36px;
+font-weight: 500;
+margin-bottom: -1%;
+color: white;
+text-align: center;
+}
+
+.title2{
+    text-align: center;
+    color: rgb(230, 230, 230);
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+/*-----------------------------------------------------------------------*/
+/*-------------------------SECOND LAYER----------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+.SecondLayer{
+    padding-top: 4%;
+    background-color: rgb(18, 135, 191);
+    margin-top: -1.5%;
+    margin-left: -0.6%;
+    margin-right: -0.5%;
+    padding-bottom: 7%;
+}
+
+.circle {
+    width: 50px; 
+    height: 50px;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 4%;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 17%;
+    margin-top: 25%;
+    transform: rotate(45deg);
+  }
+
+.form::before {
+    content: ''; 
+    position: absolute;
+    left: 46%; 
+    bottom: 100%;
+    border:30px solid transparent;
+    border-bottom: 30px solid white;
+}
+
+.form{
+      background-color: white;
+      width:45%;
+      height:450px;
+      margin: 0 auto;
+      position: relative; 
+}
+
+.form .box {
+    width: 6%; 
+    height: 9%;
+    position: absolute;
+    top: -5%;
+    right: -3.5%;
+    padding: 0.5% 0.5%;
+    border-radius: 50%;
+    background: red;
+    color: white;
+    border:2px solid white;
+}
+  
+.close-x {
+    stroke: white;
+    stroke-width: 2;
+}
+
+.SecondLayerText{
+    text-align: center;
+    color: gray;
+    padding-top: 8%;
+    padding-bottom: 6%;
+}
+
+.inputforms{
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.inputforms input{
+    font-size: 14px;
+    width: 68%;
+    height: 45px;
+    border-radius: 3px;
+    border: 1px solid rgb(200,200,200);
+    margin-bottom: 1%;
+    padding-left: 3%;
+}
+
+.inputforms input::placeholder{
+    color: rgb(169,169,169);
+    font-size: 14px;
+}
+
+.inputforms input:focus{
+    border: 1px solid #39c;
+    outline: none;
+    box-shadow:0 0 5px #39c;
+}
+
+.submitbtn{
+    text-align: center;
+}
+
+.submitbtn button{
+    padding: 1.5% 4% 1.5% 4%;
+    font-size: 14px;
+    background-color: rgb(222, 43, 36);
+    color: white;
+    border-radius: 5px;
+    border-color: rgb(222, 43, 36);
+}
+    
+.submitbtn button:active{
+    background-color: rgb(242, 63, 56);
+    border-color: white;
+}
+ 
+/*-----------------------------------------------------------------------*/
+/*-------------------------THIRD LAYER-----------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+.ThirdLayer{
+    background-color: rgb(42, 42, 42);
+    margin-top: -1.5%;
+    margin-left: -0.6%;
+    margin-right: -0.5%;
+    padding-bottom: 7%;
+    padding-top: 3%;
+}
+
+.ThirdLayerTitle{
+        color: white;
+        font-size: 29px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 1%;
+}
+
+.ThirdLayerText{
+    text-align: center;
+    color: rgb(200, 200, 200);
+}
+
+.NetworkLinks{
+    width: 14.2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.NetworkLinks a:visited{
+        color: rgb(42, 42, 42);
+}
+
+.NetworkLinks a img{
+        margin: 1.5%;
+        border: 2px solid rgb(81, 81, 81);;
+        border-radius: 3px;
+        padding: 5%;
+}
+
+.NetworkLinks a img:hover{
+        border-color: red;
+}
+
+.EmailForm{
+    text-align: center;
+    margin-bottom: 1.5%;
+}
+
+.EmailForm input{
+    color: white;
+    font-size: 14px;
+    width: 37%;
+    height: 45px;
+    background-color: rgb(81, 81, 81);
+    border-radius: 3px;
+    border-width: 0px;
+    margin-bottom: 0.5%;
+    padding-left: 1.5%;
+}
+
+.EmailForm input::placeholder{
+    color: rgb(200, 200, 200);
+    font-size: 14px;
+}
+    
+.EmailForm input:focus{
+    outline: none;
+    box-shadow:0 0 5px rgb(81, 81, 81);
+}
+
+.subscribebtn{
+    text-align: center;
+}
+
+.subscribebtn button{
+    padding: 0.7% 1.5% 0.7% 1.5%;
+    font-size: 17px;
+    background-color: rgb(42, 42, 42);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(81, 81, 81);
+    border-radius: 3px;
+}
+    
+.subscribebtn button:active{
+    background-color: rgb(81, 81, 81);
+    border-color:white;
+}
+
+/*-----------------------------------------------------------------------*/
+/*-----------------------------FOOTER------------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+footer{
+    background-color: rgb(81, 81, 81);
+    margin-left: -0.6%;
+    margin-right: -0.5%;
+    margin-bottom: -1%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+footer>p{
+    font-size: 14px;
+    text-align: center;
+    color: rgb(200, 200, 200); 
+}

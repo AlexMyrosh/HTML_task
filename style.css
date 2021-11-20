@@ -4,22 +4,23 @@
 /*-----------------------------------------------------------------------*/
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 250px);/*create 4 clomuns for our grid*/
-    grid-template-rows: repeat(2, 250px);/*and 2 rows*/
+    grid-template-columns: repeat(1, 250px);/*create 4 clomuns for our grid*/
+    grid-template-rows: repeat(8, 250px);/*and 2 rows*/
     justify-content: center;
 } 
+
 
 html{
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
 }
 
 .FirstLayer {
-    padding-top: 4%;
+    padding-top: 50px;
     background-color: rgb(222, 43, 36);
-    margin-top: -1.5%;
-    margin-left: -0.6%;
-    margin-right: -0.5%;
-    padding-bottom: 7%; /*Distance from bottom of the grid to another layer*/
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-bottom: 100px; /*Distance from bottom of the grid to another layer*/
 }
 
 /*Elements in the grid without a photo*/
@@ -96,7 +97,7 @@ html{
 .title1{
 font-size: 36px;
 font-weight: 500;
-margin-bottom: -1%;
+margin-bottom: -20px;
 color: white;
 text-align: center;
 }
@@ -113,12 +114,12 @@ text-align: center;
 /*-----------------------------------------------------------------------*/
 
 .SecondLayer{
-    padding-top: 4%;
+    padding-top: 50px;
     background-color: rgb(18, 135, 191);
-    margin-top: -1.5%;
-    margin-left: -0.6%;
-    margin-right: -0.5%;
-    padding-bottom: 7%;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-bottom: 100px;
 }
 
 .circle {
@@ -128,15 +129,15 @@ text-align: center;
     border: 3px solid white;
     border-radius: 50%;
     margin: 0 auto;
-    margin-bottom: 4%;
+    margin-bottom: 70px;
 }
 
 .arrow {
     border: solid white;
     border-width: 0 3px 3px 0;
     display: inline-block;
-    padding: 17%;
-    margin-top: 25%;
+    padding: 8px;
+    margin-top: 13px;
     transform: rotate(45deg);
   }
 
@@ -151,17 +152,18 @@ text-align: center;
 
 .form{
       background-color: white;
-      width:45%;
+      width:330px;
       height:450px;
       margin: 0 auto;
       position: relative; 
+      border-radius: 3px;
 }
 
 .form .box {
-    width: 6%; 
-    height: 9%;
+    width: 30px; 
+    height: 30px;
     position: absolute;
-    top: -5%;
+    top: -4%;
     right: -3.5%;
     padding: 0.5% 0.5%;
     border-radius: 50%;
@@ -170,16 +172,21 @@ text-align: center;
     border:2px solid white;
 }
   
-.close-x {
-    stroke: white;
-    stroke-width: 2;
-}
+.form .box div{
+    font-size: 20px;
+    position: absolute;
+    top: 20%;
+    right: 30%;
+    font-weight: 100;
+ }  
 
 .SecondLayerText{
+    font-size:15px;
     text-align: center;
     color: gray;
-    padding-top: 8%;
-    padding-bottom: 6%;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin: 15px
 }
 
 .inputforms{
@@ -189,12 +196,12 @@ text-align: center;
 
 .inputforms input{
     font-size: 14px;
-    width: 68%;
+    width: 250px;
     height: 45px;
     border-radius: 3px;
     border: 1px solid rgb(200,200,200);
-    margin-bottom: 1%;
-    padding-left: 3%;
+    margin-bottom: 5px;
+    padding-left: 15px;
 }
 
 .inputforms input::placeholder{
@@ -232,11 +239,11 @@ text-align: center;
 
 .ThirdLayer{
     background-color: rgb(42, 42, 42);
-    margin-top: -1.5%;
-    margin-left: -0.6%;
-    margin-right: -0.5%;
-    padding-bottom: 7%;
-    padding-top: 3%;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-bottom: 100px;
+    padding-top: 40px;
 }
 
 .ThirdLayerTitle{
@@ -244,29 +251,35 @@ text-align: center;
         font-size: 29px;
         text-align: center;
         font-weight: bold;
-        margin-bottom: 1%;
+        margin-bottom: 20px;
 }
 
 .ThirdLayerText{
     text-align: center;
     color: rgb(200, 200, 200);
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .NetworkLinks{
-    width: 14.2%;
+    width: 224px;
     margin-left: auto;
     margin-right: auto;
+
 }
 
-.NetworkLinks a:visited{
+.NetworkLinks a:visited,
+.NetworkLinks a:link,
+.NetworkLinks a:hover,
+.NetworkLinks a:active{
         color: rgb(42, 42, 42);
 }
 
 .NetworkLinks a img{
-        margin: 1.5%;
+        margin: 5px;
         border: 2px solid rgb(81, 81, 81);;
         border-radius: 3px;
-        padding: 5%;
+        padding: 10px;
 }
 
 .NetworkLinks a img:hover{
@@ -275,19 +288,18 @@ text-align: center;
 
 .EmailForm{
     text-align: center;
-    margin-bottom: 1.5%;
+    margin-bottom: 30px;
 }
 
 .EmailForm input{
     color: white;
     font-size: 14px;
-    width: 37%;
+    width: 280px;
     height: 45px;
     background-color: rgb(81, 81, 81);
     border-radius: 3px;
     border-width: 0px;
-    margin-bottom: 0.5%;
-    padding-left: 1.5%;
+    padding-left: 20px;
 }
 
 .EmailForm input::placeholder{
@@ -305,7 +317,7 @@ text-align: center;
 }
 
 .subscribebtn button{
-    padding: 0.7% 1.5% 0.7% 1.5%;
+    padding: 10px 25px 10px 25px;
     font-size: 17px;
     background-color: rgb(42, 42, 42);
     color: rgb(255, 255, 255);
@@ -324,11 +336,11 @@ text-align: center;
 
 footer{
     background-color: rgb(81, 81, 81);
-    margin-left: -0.6%;
-    margin-right: -0.5%;
-    margin-bottom: -1%;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 footer>p{
@@ -336,3 +348,46 @@ footer>p{
     text-align: center;
     color: rgb(200, 200, 200); 
 }
+
+@media only screen and (min-width: 768px)  {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 250px);/*create 4 clomuns for our grid*/
+        grid-template-rows: repeat(4, 250px);/*and 2 rows*/
+        justify-content: center;
+    } 
+}
+
+  @media only screen and (min-width: 1020px) {
+    /* For desktop: */
+
+    .grid {
+        grid-template-columns: repeat(4, 250px);/*create 4 clomuns for our grid*/
+        grid-template-rows: repeat(2, 250px);/*and 2 rows*/
+    } 
+
+    .form{
+        width:700px;
+  }
+  
+  .form .box {
+      width: 40px; 
+      height: 40px;
+      top: -5%;
+  }
+  .form .box div{
+    font-size: 26px;
+ }  
+ .inputforms input{
+    width: 500px;
+    margin-bottom: 8px;
+    padding-left: 20px;
+}
+.SecondLayerText{
+    font-size:18px;
+}
+.EmailForm input{
+    width: 500px;
+}
+
+  }
